@@ -1,61 +1,198 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+Contract Genie
+Your #1 AI tool to help entrepreneurs and freelancers negotiate smarter, close faster, and protect every deal.
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+<!-- optional if you have one -->
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+🚀 Overview
+Contract Genie is an AI-powered contract analysis and negotiation platform designed for freelancers, entrepreneurs, and agencies who want to close deals with confidence — whether they’re on Upwork or negotiating directly in communities, forums, or private networks.
 
-## Features
+With Contract Genie, you can upload any contract and instantly receive:
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports OpenAI (default), Anthropic, Cohere, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+Clause-by-clause risk ratings
 
-## Model Providers
+Suggested edits and negotiation language
 
-This template ships with OpenAI `gpt-4o` as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+Ready-to-send “negotiate back” emails
 
-## Deploy Your Own
+Custom clause pack recommendations tailored to your business model
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+✨ Key Features
+AI Contract Review – Upload a PDF or DOCX contract and get instant analysis.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET,OPENAI_API_KEY&envDescription=Learn%20more%20about%20how%20to%20get%20the%20API%20Keys%20for%20the%20application&envLink=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel.&demo-url=https%3A%2F%2Fchat.vercel.ai&stores=[{%22type%22:%22postgres%22},{%22type%22:%22blob%22}])
+Clause Risk Scoring – Quickly spot high-risk, ambiguous, or unfair clauses.
 
-## Running locally
+Negotiation Language Generator – Create professional, firm but friendly counter‑proposals.
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+Custom Clause Pack Builder – Save and reuse your favorite clauses for future deals.
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
+Secure Login – User authentication for secure access (already functional).
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables:
+🛠 Tech Stack
+Frontend: Next.js, Tailwind CSS (UI polishing in progress)
 
-```bash
-pnpm install
-pnpm dev
-```
+Backend: Node.js / Express
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+AI Processing: Venice API + GPT
+
+OCR / Document Parsing: Google Cloud Vision API
+
+Database: Firebase / Firestore
+
+📦 Installation & Setup
+Prerequisites
+Node.js >= 18
+
+Google Cloud account with Vision API enabled
+
+Venice API key
+
+Firebase project configured
+
+Clone and Install
+bash
+Copy
+Edit
+git clone Contract Genie
+Your #1 AI tool to help entrepreneurs and freelancers negotiate smarter, close faster, and protect every deal.
+
+<!-- optional if you have one -->
+
+🚀 Overview
+Contract Genie is an AI-powered contract analysis and negotiation platform designed for freelancers, entrepreneurs, and agencies who want to close deals with confidence — whether they’re on Upwork or negotiating directly in communities, forums, or private networks.
+
+With Contract Genie, you can upload any contract and instantly receive:
+
+Clause-by-clause risk ratings
+
+Suggested edits and negotiation language
+
+Ready-to-send “negotiate back” emails
+
+Custom clause pack recommendations tailored to your business model
+
+✨ Key Features
+AI Contract Review – Upload a PDF or DOCX contract and get instant analysis.
+
+Clause Risk Scoring – Quickly spot high-risk, ambiguous, or unfair clauses.
+
+Negotiation Language Generator – Create professional, firm but friendly counter‑proposals.
+
+Custom Clause Pack Builder – Save and reuse your favorite clauses for future deals.
+
+Secure Login – User authentication for secure access (already functional).
+
+🛠 Tech Stack
+Frontend: Next.js, Tailwind CSS (UI polishing in progress)
+
+Backend: Node.js / Express
+
+AI Processing: Venice API + GPT
+
+OCR / Document Parsing: Google Cloud Vision API
+
+Database: Firebase / Firestore
+
+📦 Installation & Setup
+Prerequisites
+Node.js >= 18
+
+Google Cloud account with Vision API enabled
+
+Venice API key
+
+Firebase project configured
+
+Clone and Install
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/contract-genie.git
+cd contract-genie
+npm install
+Environment Variables
+Create a .env.local file in the project root with:
+
+ini
+Copy
+Edit
+VENICE_API_KEY=your_key_here
+GOOGLE_APPLICATION_CREDENTIALS=path/to/your/service-account.json
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_API_KEY=your_api_key
+🚦 Usage
+Login – Create an account or log in securely.
+
+Upload a Contract – Supports PDF or DOCX formats.
+
+Review Analysis – View risk scores, flagged clauses, and AI insights.
+
+Negotiate Back – Generate and send a professional response.
+
+Save Clauses – Keep your best clauses for future contracts.
+
+📍 Roadmap
+ Finalize UI/UX polish for MVP
+
+ Add multi-language support for global freelancers
+
+ Integrate e-signature workflow
+
+ Expand clause pack templates for niche industries
+
+🤝 Contributing
+Pull requests welcome. For major changes, please open an issue first to discuss your ideas.
+
+📄 License
+MIT License – see LICENSE.md for details.
+
+📬 Contact
+Skyler Seegmiller
+Founder & Product Designer – Contract Genie
+📧 hello@contractgenie.ai (or your preferred contact)
+🌐 [Website / Portfolio link]
+
+
+cd contract-genie
+npm install
+Environment Variables
+Create a .env.local file in the project root with:
+
+ini
+Copy
+Edit
+VENICE_API_KEY=your_key_here
+GOOGLE_APPLICATION_CREDENTIALS=path/to/your/service-account.json
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_API_KEY=your_api_key
+🚦 Usage
+Login – Create an account or log in securely.
+
+Upload a Contract – Supports PDF or DOCX formats.
+
+Review Analysis – View risk scores, flagged clauses, and AI insights.
+
+Negotiate Back – Generate and send a professional response.
+
+Save Clauses – Keep your best clauses for future contracts.
+
+📍 Roadmap
+ Finalize UI/UX polish for MVP
+
+ Add multi-language support for global freelancers
+
+ Integrate e-signature workflow
+
+ Expand clause pack templates for niche industries
+
+🤝 Contributing
+Pull requests welcome. For major changes, please open an issue first to discuss your ideas.
+
+📄 License
+MIT License – see LICENSE.md for details.
+
+📬 Contact
+Skyler Seegmiller
+Founder & Product Designer – Contract Genie
+📧 hello@contractgenie.ai (or your preferred contact)
+🌐 [Website / Portfolio link]
+
