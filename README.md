@@ -1,198 +1,94 @@
-Contract Genie
+# Contract Genie
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-80eec0)](https://orm.drizzle.team/)
+
 Your #1 AI tool to help entrepreneurs and freelancers negotiate smarter, close faster, and protect every deal.
 
-<!-- optional if you have one -->
+## Overview
 
-🚀 Overview
-Contract Genie is an AI-powered contract analysis and negotiation platform designed for freelancers, entrepreneurs, and agencies who want to close deals with confidence — whether they’re on Upwork or negotiating directly in communities, forums, or private networks.
+Contract Genie is an AI-powered contract analysis and negotiation platform designed for freelancers, entrepreneurs, and agencies who want to close deals with confidence. Upload a contract and instantly receive clause-by-clause risk ratings, suggested edits, ready-to-send negotiation emails, and custom clause recommendations.
 
-With Contract Genie, you can upload any contract and instantly receive:
+## Key Features
 
-Clause-by-clause risk ratings
+- **AI Contract Review** – Upload a PDF or DOCX contract and get instant analysis.
+- **Clause Risk Scoring** – Quickly spot high-risk, ambiguous, or unfair clauses.
+- **Negotiation Language Generator** – Create professional, firm but friendly counter‑proposals.
+- **Custom Clause Pack Builder** – Save and reuse your favorite clauses for future deals.
+- **Secure Login** – Authentication via NextAuth.
 
-Suggested edits and negotiation language
+## Tech Stack
 
-Ready-to-send “negotiate back” emails
+- **Frontend:** Next.js (React) with Tailwind CSS
+- **API Routes:** Next.js App Router
+- **Database:** PostgreSQL with Drizzle ORM
+- **Authentication:** NextAuth with credentials provider
+- **AI Processing:** Venice API + GPT (integration in progress)
 
-Custom clause pack recommendations tailored to your business model
+## Installation & Setup
 
-✨ Key Features
-AI Contract Review – Upload a PDF or DOCX contract and get instant analysis.
+### Prerequisites
 
-Clause Risk Scoring – Quickly spot high-risk, ambiguous, or unfair clauses.
+- Node.js 18+
+- PostgreSQL database
 
-Negotiation Language Generator – Create professional, firm but friendly counter‑proposals.
+### Clone and Install
 
-Custom Clause Pack Builder – Save and reuse your favorite clauses for future deals.
-
-Secure Login – User authentication for secure access (already functional).
-
-🛠 Tech Stack
-Frontend: Next.js, Tailwind CSS (UI polishing in progress)
-
-Backend: Node.js / Express
-
-AI Processing: Venice API + GPT
-
-OCR / Document Parsing: Google Cloud Vision API
-
-Database: Firebase / Firestore
-
-📦 Installation & Setup
-Prerequisites
-Node.js >= 18
-
-Google Cloud account with Vision API enabled
-
-Venice API key
-
-Firebase project configured
-
-Clone and Install
-bash
-Copy
-Edit
-git clone Contract Genie
-Your #1 AI tool to help entrepreneurs and freelancers negotiate smarter, close faster, and protect every deal.
-
-<!-- optional if you have one -->
-
-🚀 Overview
-Contract Genie is an AI-powered contract analysis and negotiation platform designed for freelancers, entrepreneurs, and agencies who want to close deals with confidence — whether they’re on Upwork or negotiating directly in communities, forums, or private networks.
-
-With Contract Genie, you can upload any contract and instantly receive:
-
-Clause-by-clause risk ratings
-
-Suggested edits and negotiation language
-
-Ready-to-send “negotiate back” emails
-
-Custom clause pack recommendations tailored to your business model
-
-✨ Key Features
-AI Contract Review – Upload a PDF or DOCX contract and get instant analysis.
-
-Clause Risk Scoring – Quickly spot high-risk, ambiguous, or unfair clauses.
-
-Negotiation Language Generator – Create professional, firm but friendly counter‑proposals.
-
-Custom Clause Pack Builder – Save and reuse your favorite clauses for future deals.
-
-Secure Login – User authentication for secure access (already functional).
-
-🛠 Tech Stack
-Frontend: Next.js, Tailwind CSS (UI polishing in progress)
-
-Backend: Node.js / Express
-
-AI Processing: Venice API + GPT
-
-OCR / Document Parsing: Google Cloud Vision API
-
-Database: Firebase / Firestore
-
-📦 Installation & Setup
-Prerequisites
-Node.js >= 18
-
-Google Cloud account with Vision API enabled
-
-Venice API key
-
-Firebase project configured
-
-Clone and Install
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/yourusername/contract-genie.git
 cd contract-genie
-npm install
-Environment Variables
-Create a .env.local file in the project root with:
+pnpm install
+```
 
-ini
-Copy
-Edit
-VENICE_API_KEY=your_key_here
-GOOGLE_APPLICATION_CREDENTIALS=path/to/your/service-account.json
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_API_KEY=your_api_key
-🚦 Usage
-Login – Create an account or log in securely.
+### Environment Variables
 
-Upload a Contract – Supports PDF or DOCX formats.
+Create a `.env.local` file in the project root:
 
-Review Analysis – View risk scores, flagged clauses, and AI insights.
+```env
+POSTGRES_URL=postgres://user:password@host:port/db
+GITHUB_WEBHOOK_SECRET=optional_secret_for_github_webhooks
+AUTH_SECRET=your_nextauth_secret
+```
 
-Negotiate Back – Generate and send a professional response.
+### Database Setup
 
-Save Clauses – Keep your best clauses for future contracts.
+Run the migrations to create the database schema:
 
-📍 Roadmap
- Finalize UI/UX polish for MVP
+```bash
+pnpm db:migrate
+```
 
- Add multi-language support for global freelancers
+### Running the App
 
- Integrate e-signature workflow
+- Development: `pnpm dev`
+- Production build: `pnpm build` then `pnpm start`
 
- Expand clause pack templates for niche industries
+## Usage
 
-🤝 Contributing
+1. Log in or register.
+2. Upload a contract (PDF or DOCX).
+3. Review analysis and suggested edits.
+4. Generate a response email or save custom clauses.
+
+## Roadmap
+
+- Finalize UI/UX polish for MVP
+- Add multi-language support for global freelancers
+- Integrate e‑signature workflow
+- Expand clause pack templates for niche industries
+
+## Contributing
+
 Pull requests welcome. For major changes, please open an issue first to discuss your ideas.
 
-📄 License
-MIT License – see LICENSE.md for details.
+## License
 
-📬 Contact
-Skyler Seegmiller
-Founder & Product Designer – Contract Genie
-📧 hello@contractgenie.ai (or your preferred contact)
-🌐 [Website / Portfolio link]
+MIT License – see LICENSE for details.
 
+## Contact
 
-cd contract-genie
-npm install
-Environment Variables
-Create a .env.local file in the project root with:
-
-ini
-Copy
-Edit
-VENICE_API_KEY=your_key_here
-GOOGLE_APPLICATION_CREDENTIALS=path/to/your/service-account.json
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_API_KEY=your_api_key
-🚦 Usage
-Login – Create an account or log in securely.
-
-Upload a Contract – Supports PDF or DOCX formats.
-
-Review Analysis – View risk scores, flagged clauses, and AI insights.
-
-Negotiate Back – Generate and send a professional response.
-
-Save Clauses – Keep your best clauses for future contracts.
-
-📍 Roadmap
- Finalize UI/UX polish for MVP
-
- Add multi-language support for global freelancers
-
- Integrate e-signature workflow
-
- Expand clause pack templates for niche industries
-
-🤝 Contributing
-Pull requests welcome. For major changes, please open an issue first to discuss your ideas.
-
-📄 License
-MIT License – see LICENSE.md for details.
-
-📬 Contact
-Skyler Seegmiller
-Founder & Product Designer – Contract Genie
-📧 hello@contractgenie.ai (or your preferred contact)
-🌐 [Website / Portfolio link]
+Skyler Seegmiller  
+Founder & Product Designer – Contract Genie  
+hello@contractgenie.ai
 
